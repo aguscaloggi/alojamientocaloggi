@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $bgcolor;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+.paragraphContainer {
+    background-color: $bgcolor;
+    color: $fontcolor;
+    text-align: justify;
+    border-radius: 0.5em;
+    padding: 1rem;
+    margin: 1vh 1.5vw;
+    box-shadow: $boxshadow;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: $bgcolor;
+    color: rgba(245, 245, 245, 0.60);
+    border-radius: 10px;
+    width: 400px;
+    height: 370px;
+    padding: 16px;
+    margin-top: 2vh;
+    box-shadow: $boxshadow; 
+}
+
+.flex__buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    background-color: $btcolor;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: $fontcolor;
+    padding: 0.4em 0.8em;
+    margin: 0.5em;
+    border: 0px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(55, 139, 252, 0.3);
+        color: $fontcolorhover;
+        transition-duration: 200ms;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(122, 122, 122);
+  border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
